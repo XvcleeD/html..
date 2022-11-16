@@ -1,0 +1,43 @@
+*{ box-sizing: border-box;}
+body{
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+}
+div{ width: 10%;}
+@media only screen and ( max-width:1220px){
+    body{ background-color: aquamarine;}
+    div{ width: 33.3%;}
+}
+@media only screen and ( max-width:600px){
+    body{ background-color: bisque;}
+    div{ width: 50%;}
+}
+@media only screen and ( max-width:300px){
+    div{ width: 100%;}
+}
+ .color1 {
+    background-color: blue;
+    
+ }
+ .color2{ 
+    background-color: cadetblue;
+ }
+ .color3{ 
+    background-color: blueviolet;
+ }
+ .color4{
+     background-color: orange;
+ }
+ .color5{ 
+    background-color: cadetblue;
+ }
+ .color6{ 
+    background-color: blueviolet;
+ }
+ .color7{
+     background-color: orange;
+ }
+ /* .item{ 
+    width: 300px;
+ } */

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      margin: 0 auto;
+      max-width: 1280px;
+      
+    }
+
+    body {
+      background-color: seashell;
+    }
+
+    .form-group {
+      padding: 15px;
+    }
+
+    .input {
+      border-radius: 5px;
+      border-color: blue;
+      padding: 10px 15px;
+    }
+
+    input:valid,
+    input:in-range {
+      border-color: green;
+    }
+
+    input:invalid,
+    input:out-of-range {
+      border-color: red;
+    }
+
+    .form-group1 {
+      display: flex;
+      /* justify-content: ; */
+      margin: 20px
+    }
+
+    .label {
+      /* flex: 0.2; */
+      width: 150px;
+      text-align: right;
+      /* display: inline-block; */
+
+    }
+
+      
+      /* width: 150px; */
+      /* display: inline-block; */
+      /* flex: 0.8; */
+      /* justify-content: flex-start; */
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="">
+      <fieldset>
+        <legend>Test</legend>
+        <div class="form-group">
+          <input type="hidden" id="id" name="id" value="123">
+          <label for="">Lastname</label>
+          <input class="input" placeholder="insert lastname" type="text" name="lastname">
+        </div>
+        <div class="form-group">
+          <label for="">Firstname</label>
+          <input class="input" placeholder="Firstname" type="text" name="firstname">
+        </div>
+          <div class="form-group">
+            <label for="Gender">Gender</label>
+            <input type="radio" id="female" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="male" value="Male">
+            <label for="male">Male</label>
+          </div>
+        <div class="form-group">
+          <label for="Date">Which type of vehicle you have? </label> <br>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a car</label><br>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a boat</label><br>
+        </div>
+        <div class="form-group">
+          <label for="Date">How many vehicle you have? </label>
+          <input type="number" min="2" max="5" maxlength="30">
+
+        </div>
+        <div class="form-group">
+          <label for="Date">Date</label>
+          <input type="month" id="bdaymonth" name="bdaymonth">
+          <input type="date" id="bday" name="bday" min="2022-11-14" max="2022-11-25">
+          <input type="time" id="bdaytime" name="bdaytime">
+          <input type="week" id="bdayweek" name="bdayweek">
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="0">-- Select --</option>
+            <option value="1">Mongolia</option>
+            <option value="2">India</option>
+            <option value="3">Japan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="upload">File upload</label>
+          <input type="file" id="myfile" name="myfile">
+        </div>
+        <div class="form-group">
+          <label for="Description">Description</label>
+          <textarea name="" id="desc" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"> -->
+        <!-- submit hiiheer x, y butsaadag -->
+
+        <label for="favcolor ">Change color </label>
+        <input type="color" id="favcolor" name="favcolor" value="#FFF">
+        <div class="form-group">
+          <label for="vol ">Volume (between 0 and 50): </label>
+          <input type="range" id="vol" name="vol" min="0" max="50">
+        </div>
+
+        <div class="form-group">
+          <button name="save" id="btn">Save</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <form>
+      <div class="form-group1">
+        <div class="label"><label for="name">name</label></div>
+        <div class="element"><input type="text" name="name" placeholder="name"></div>
+      </div>
+      <div class="form-group1">
+        <div class="label"><label for="name">age</label></div>
+        <div class="element"><input type="number" name="name" placeholder="name"></div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
